@@ -1,0 +1,207 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+.judul {
+    margin-top: 30px;
+    text-align: center;
+    border-bottom: 3px solid #5D3587;
+    padding-bottom: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; 
+}
+
+nav {
+    margin: 0px;
+    padding: 5px;
+    background-color: #392467;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    color: #d1b4f0;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+a:hover {
+    color: white;
+}
+
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    bottom: -2;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+
+.logo {
+    margin: 0px;
+    margin-left: 10px;
+    color: white;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+header {
+    font-size: 20px;
+    padding: 100px;
+    padding-left: 50px;
+    background-color: #5D3587;
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#label-alas {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+#label-tinggi {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+#input-tinggi {
+    margin-bottom: 15px;
+}
+
+input {
+    outline: none;
+    border-radius: 10px;
+    padding: 8px;
+    border-color: 1px #5D3587;
+    width: 150%;
+}
+
+input:hover {
+    border-color: #392467;
+}
+
+input:focus {
+    border-color: #392467;
+}
+
+img {
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+}
+
+.navbar button {
+    text-decoration: none;
+    background-color: #5D3587;
+    border-color: #A367B1;
+    border-style: solid;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(57, 36, 103, 0.8);
+    margin-top: 10px;
+}
+
+#button-navigasi {
+    font-size: 18px;
+}
+
+button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    background-color: #5D3587;
+    border-color: #A367B1;
+    border-style: solid;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#button-navigasi:hover {
+    border-color: #FFD1E3;
+}
+
+button:hover {
+    background-color: #A367B1;
+    border-color: #FFD1E3;
+}
+
+button:active {
+    background-color: #392467;
+    transform: translateY(2px);
+}
+
+footer {
+    background-color: #392467;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.luas-segitiga, .keliling-segitiga {
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.luas-segitiga {
+    background-color: white; 
+}
+
+.keliling-segitiga {
+    background-color: #FFEBC1;
+}
